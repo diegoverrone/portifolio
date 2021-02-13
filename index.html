@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-
+
+scale=1.0">
+    <title>Diego Verrone Developer Jr.</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Yanone
+
++Kaffeesatz:wght@600&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/94c400df67.js" 
+
+crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#curriculum">Curriculum</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+        <div class="titulos">
+            <h1 class="site-title">Diego Verrone</h1>
+            <p>Developer Web Jr.</p>
+            <p>JavaScript - ServiceNow - HTML - CSS - Phyton</p>
+        </div>
+
+    </header>
+
+</section>
+<section class="curriculum" id="curriculum">
+    <h2>curriculum aqui:</h2>
+
+    <div class="grid icons">
+        <a target="_blank" href="****">
+            <i class="fas fa-graduation-cap"></i>
+
+
+            </a>
+
+    </div>
+
+</section>
+
+    </section>
+    <section class="contato" id="contato">
+        <h2>Contato</h2>
+
+        <div class="grid icons">
+            <a target="_blank" href="https://github.com/diegoverrone">
+                <i class="fab fa-github"></i>
+
+            </a>
+            <a target="_blank" href="https://twitter.com">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a target="_blank" 
+
+href="https://www.linkedin.com/in/diegoverrone87/">
+                <i class="fab fa-linkedin"></i>
+
+                <a target="_blank" 
+
+href="mailto:diegoalmeidaverrone@gmail.com">
+                    <i class="far fa-envelope-open"></i>
+
+                </a>
+
+        </div>
+
+    </section>
+
+
+
+    <script>
+        function typeWriter(elemento) {
+            const textoArray = elemento.innerHTML.split('');
+            elemento.innerHTML = '';
+            textoArray.forEach((letra, i) => {
+                setTimeout(() => elemento.innerHTML += letra, 75 * i)
+            });
+        }
+        const titulo = document.querySelector('h1');
+        typeWriter(titulo);
+
+        typerWriter(document.querySelector('p'));
+    </script>
+
+</body>
+
+</html>
